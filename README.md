@@ -7,12 +7,17 @@
 ## 実行環境
 
 - Python 3.11.3
+- tkinter
+- PyGame
 
 ## 作成ゲームについて
 
 GUI で遊べるゲームを作成します．
+GUI(Graphical User Interface)とは，グラフィックを使用し，マウスのようなポインティングデバイスによって操作する方式のこと．
 
-1.
+### 座標系について
+
+![座標系について](images/graph.png)
 
 ### 参考
 
