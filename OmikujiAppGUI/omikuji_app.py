@@ -75,6 +75,8 @@ def DealFortune():
             if test_mode != True:
                 result_label["text"] = omikuji_resutlts[i].result
                 result_text["text"] = FitString(omikuji_resutlts[i].text)
+                result_label.update()
+                result_text.update()
             return str(omikuji_resutlts[i].result)
         sum_num_start += omikuji_resutlts[i].probability
 
