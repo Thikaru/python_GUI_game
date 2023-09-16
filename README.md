@@ -17,7 +17,7 @@ GUI(Graphical User Interface)とは，グラフィックを使用し，マウス
 
 ### 座標系について
 
-![座標系について](images/graph.png)
+![座標系について](github_images/graph.png)
 
 ### 参考
 
