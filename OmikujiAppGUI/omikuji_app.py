@@ -40,6 +40,12 @@ omikuji_resutlts = [
 test_mode = False
 
 
+# FIX：改行文字数を変更できるようにしてもいいと思う．しかし，今回は17文字でしか使わないためいらない？
+# 文字列を改行文字で分割する．その後，その文字列を17文字ごとに改行文字を入れて，それによってできた文字列を返す．
+# ★引数
+# words：文字列を渡す．
+# ★返り値
+# 一行が最大17文字になるように改行した文字列を返す．
 def FitString(words):
     strings = ""
     string_num = 17
@@ -54,10 +60,10 @@ def FitString(words):
                 for k in range(string_num-len(seventeen_words[j])):
                     seventeen_words[j] += add_space
             strings += seventeen_words[j]+"\n"
-
     return strings
 
 
+# おみくじの結果を表示する関数
 def DealFortune():
     total_probability = OmikujiResutlt.total_probability
     sum_num_start = 1
@@ -73,6 +79,9 @@ def DealFortune():
         sum_num_start += omikuji_resutlts[i].probability
 
 
+# テスト用の処理
+# 現状テストしている関数
+# FitString(words)，DealFortune()
 if test_mode == True:
     # DealFortune()をテストする処理
     i = 0
@@ -118,6 +127,8 @@ if test_mode == True:
         print(words)
     quit()
 
+
+## ======  Main  ======= ##
 # ウィンドウオブジェクトを作成
 root = tkinter.Tk()
 root.title("おみくじアプリ")
